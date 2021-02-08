@@ -23,6 +23,10 @@
 
 </head>
 <body>
+    <p>
+        <i class="fas fa-times"></i>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis mollitia harum omnis veniam repellendus quia ad hic voluptatum aspernatur distinctio!
+    </p>
     <div id="app">
         <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
             <div class="container">
@@ -64,7 +68,6 @@
                                     <a class="dropdown-item" href="{{ route('logout') }}"
                                        onclick="event.preventDefault();
                                                      document.getElementById('logout-form').submit();">
-                                        <i class="fas fa-times"></i>
                                         {{ __('Logout') }}
                                     </a>
 
