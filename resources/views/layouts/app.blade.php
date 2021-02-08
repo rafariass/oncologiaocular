@@ -11,7 +11,6 @@
     <!-- CSS Style -->
     <link rel="stylesheet" href="{{asset('css/bootstrap_v4.6/bootstrap.css')}}">
     <link rel="stylesheet" href="{{asset('css/hamburgers_v1.1.3/hamburgers.css')}}">
-    <link rel="stylesheet" href="{{asset('css/font_awesome_v5.15.2/font_awesome.css')}}">
     <link rel="stylesheet" href="{{asset('css/style.css')}}">
 
     <!-- CDN Sweet Alert2 CSS -->
@@ -23,10 +22,6 @@
 
 </head>
 <body>
-    <p>
-        <i class="fas fa-times"></i>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis mollitia harum omnis veniam repellendus quia ad hic voluptatum aspernatur distinctio!
-    </p>
     <div id="app">
         <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
             <div class="container">
@@ -92,7 +87,6 @@
     <script src="{{asset('js/popper_v1.16.1/popper.js')}}"></script>
     <script src="{{asset('js/bootstrap_v4.6/bootstrap.js')}}"></script>
     <script src="{{asset('js/hamburgers_v1.1.3/hamburgers.js')}}"></script>
-    <script src="{{asset('js/font_awesome_v5.15.2/font_awesome.js')}}"></script>
     <script src="{{asset('js/function.js')}}"></script>
 </body>
 </html>
