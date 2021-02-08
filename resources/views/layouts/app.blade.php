@@ -3,21 +3,23 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{{ config('app.name', 'Laravel') }}</title>
 
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>{{ config('app.name', 'Laravel') }}</title>
+    <!-- CSS Style -->
+    <link rel="stylesheet" href="{{asset('css/bootstrap_v4.6/bootstrap.css')}}">
+    <link rel="stylesheet" href="{{asset('css/hamburgers_v1.1.3/hamburgers.css')}}">
+    <link rel="stylesheet" href="{{asset('css/style.css')}}">
 
-    <!-- Scripts -->
-    <script src="{{ asset('js/app.js') }}" defer></script>
+    <!-- CDN Sweet Alert2 CSS -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
 
     <!-- Fonts -->
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
 
-    <!-- Styles -->
-    <link href="{{ asset('css/app.css') }}" rel="stylesheet">
 </head>
 <body>
     <div id="app">
@@ -45,7 +47,7 @@
                                     <a class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a>
                                 </li>
                             @endif
-                            
+
                             @if (Route::has('register'))
                                 <li class="nav-item">
                                     <a class="nav-link" href="{{ route('register') }}">{{ __('Register') }}</a>
@@ -79,5 +81,12 @@
             @yield('content')
         </main>
     </div>
+
+    <!-- JS app -->
+    <script src="{{asset('js/jquery_v3.5.1/jquery-3.5.1.js')}}"></script>
+    <script src="{{asset('js/popper_v1.16.1/popper.js')}}"></script>
+    <script src="{{asset('js/bootstrap_v4.6/bootstrap.js')}}"></script>
+    <script src="{{asset('js/hamburgers_v1.1.3/hamburgers.js')}}"></script>
+    <script src="{{asset('js/function.js')}}"></script>
 </body>
 </html>
